@@ -13,11 +13,3 @@ class LibrarySetup:
             )
 
         return library
-
-
-if __name__ == "__main__":
-    import json
-
-    data = json.load(open("books.json"))
-    library = LibrarySetup.setup_library(data)
-    print(library)
